@@ -11,7 +11,6 @@ let errorLogo = document.querySelector(".error_logo img");
 let errorText = document.querySelector(".error_logo p");
 let cityName = document.querySelector(".cityname");
 
-
 button.addEventListener("click", () => {
   checkWeather(input.value);
 });
@@ -39,6 +38,9 @@ async function checkWeather(city) {
     errorBox.style.display = "none";   // hide error
     errorText.style.display = "none";
     weatherInfo.style.display = "flex";
+
+    cityName.innerHTML = city;
+    cityName.style.textTransform = "capitalize";
 
     var data = await response.json();
     console.log(data);
