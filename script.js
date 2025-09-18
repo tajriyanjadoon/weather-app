@@ -75,3 +75,9 @@ async function checkWeather(city) {
      
   }
 }
+
+// set default icon on page load
+window.onload = () => {
+  weatherIcon[0].src = "assets/cloud.png";
+};
+
