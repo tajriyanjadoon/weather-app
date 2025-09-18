@@ -102,6 +102,13 @@ body {
         margin-bottom: 20px;
     }
 }
+.cityna {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
 
 .weather-icon {
     width: 50%;
@@ -174,15 +181,33 @@ body {
     color: #333;
 }
 
-.error_logo img {
+/* .error_logo img {
     position: relative;
     width: 100%;
-    display: none;
-    /* hidden by default */
+    display:none;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    color: red;
-    /* style if you want */
-    font-weight: 600;
+} */
+
+.error_logo {
+  display: none; /* hidden by default */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
+
+.error_logo img {
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.error_logo p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(2, 2, 2);
+  text-align: center;
+  display: none; /* hidden until triggered */
+}
+
